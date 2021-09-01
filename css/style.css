@@ -1,0 +1,19 @@
+body{
+    background-image: url(../images/my-books.png);
+    background-color: #13141b;
+    color: #ffffff;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+/* Books Gallery */
+.card{
+    height: 250px;
+}
+/* Loader */
+#spinner{
+    display: none;
+    justify-content: center;
+    margin-top: 100px;
+    
+}
