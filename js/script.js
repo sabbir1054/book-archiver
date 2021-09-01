@@ -9,7 +9,7 @@ const getSearchText = () => {
 //Get Data By API Fetch
 const getBooksData = (searchText) => {
   spinner("flex"); //spinner on
-  const url = `http://openlibrary.org/search.json?q=${searchText}`;
+  const url = `https://openlibrary.org/search.json?q=${searchText}`;
   fetch(url)
     .then((res) => res.json())
     .then((data) => displayBooksData(data));
@@ -76,7 +76,7 @@ const displayBooksNumber = (booksInfo) => {
     document.getElementById("cards-div").innerHTML = `
             <h1 class="text-center text-white">No Results Found</h1>
         `;
-      spinner("none"); 
+    spinner("none");
   }
   document.getElementById("total-books").innerText = totalBooksFound;
   document.getElementById("showing-books").innerText = booksArr.length;
